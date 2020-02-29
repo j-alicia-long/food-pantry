@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row p-4">
+
+      <div class="col-sm-4">
+        <h2>Dashboard</h2>
+      </div>
+
+      <div class="col-sm-8">
+        <p>Your username is {{ user.get_username }}.</p>
+        <p>You should only see this page if you're successfully logged in.</p>
+        <a href="{% url 'logout'%}">Log out</a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
