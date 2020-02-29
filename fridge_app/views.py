@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from fridge_app.forms import FoodForm
-from django.views.generic.edit import FormView
+# from fridge_app.forms import FoodForm
+# from django.views.generic.edit import FormView
 
 # Create your views here.
 
