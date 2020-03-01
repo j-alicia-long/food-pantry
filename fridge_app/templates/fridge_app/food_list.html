@@ -1,0 +1,27 @@
+{% extends "fridge_app/base.html" %}
+
+{%block content %}
+
+<div class="col-sm-4">
+  <h1>Food Pantry</h1>
+</div>
+
+<div class="col-sm-8">
+  {% if food_list %}
+  <ul class="list-group">
+    {% for food in food_list %}
+        <li class="list-group-item">
+          <strong>{{ food.food_name }}</strong>
+          <p>Expires: {{ food.exp_date }}</p>
+          <p>Donated by: {{ food.user }}</p>
+          <a href="#">Take food</a>
+        </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+      <p>No food available :( Donate some food?</p>
+      <a data-toggle="modal" href="{% url 'fridge_app:food_add' %}">Add Food</a>
+  {% endif %}
+</div>
+
+{% endblock %}

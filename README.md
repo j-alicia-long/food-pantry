@@ -25,8 +25,9 @@ Explain how to run the automated tests for this system
 ## Authors
 
 * **Jennifer Long** - [j-alicia-long](https://github.com/j-alicia-long)
-* **Ishaan Dey** - [ishaandey](https://github.com/ishaandey)
 * **Camille Digamo** - [CamilleDigamo](https://github.com/CamilleDigamo)
+* **Ishaan Dey** - [ishaandey](https://github.com/ishaandey)
+
 
 ## Acknowledgments
 
