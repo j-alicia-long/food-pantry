@@ -8,11 +8,10 @@ from .models import Food
 
 @login_required
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'fridge_app/index.html')
 
-@login_required
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'fridge_app/about.html')
 
 # Can't use @login_required decorator on a class
 @method_decorator(login_required, name='dispatch')

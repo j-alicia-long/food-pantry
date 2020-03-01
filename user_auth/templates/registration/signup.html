@@ -1,7 +1,12 @@
 {% extends "fridge_app/base.html" %}
 
 {% block content %}
+
+<div class="col-sm-4">
   <h2>Sign up</h2>
+</div>
+
+<div class="col-sm-8">
   <form method="post">
     {% csrf_token %}
     {% for field in form %}
@@ -18,4 +23,7 @@
     {% endfor %}
     <button type="submit">Sign up</button>
   </form>
+</div>
+
+
 {% endblock %}

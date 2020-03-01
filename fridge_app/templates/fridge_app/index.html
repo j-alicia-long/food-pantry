@@ -2,20 +2,33 @@
 
 {% block content %}
 
-  <div class="container">
-    <div class="row p-4">
+<div class="col-sm-4">
+  <h2>Dashboard</h2>
+  <a href="{% url 'logout'%}">Log out</a>
+</div>
 
-      <div class="col-sm-4">
-        <h2>Dashboard</h2>
+<div class="col-sm-8 p-2">
+  <h4>Hello, {{ user.get_username }}!</h4>
+  <p>What would you like to do today?</p>
+
+  <div class="row m-4 justify-content-center">
+    <div class="col-sm-6">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Donate food</h5>
+          <a href="#" class="btn btn-primary">Go</a>
+        </div>
       </div>
-
-      <div class="col-sm-8">
-        <p>Your username is {{ user.get_username }}.</p>
-        <p>You should only see this page if you're successfully logged in.</p>
-        <a href="{% url 'logout'%}">Log out</a>
+    </div>
+    <div class="col-sm-6">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Take food</h5>
+          <a href="#" class="btn btn-primary">Go</a>
+        </div>
       </div>
-
     </div>
   </div>
+</div>
 
 {% endblock %}

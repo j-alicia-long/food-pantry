@@ -1,8 +1,12 @@
 {% extends "fridge_app/base.html" %}
 
 {% block content %}
-  <h2>Login</h2>
 
+<div class="col-sm-4">
+  <h2>Login</h2>
+</div>
+
+<div class="col-sm-8">
   {% if form.errors %}
     <p>Your username and password didn't match. Please try again.</p>
   {% endif %}
@@ -33,4 +37,7 @@
   </form>
 
   <p><a href="{% url 'signup' %}">Create an account</a></p>
+
+</div>
+
 {% endblock %}
