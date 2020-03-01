@@ -17,14 +17,14 @@
         <a class="nav-link" href="{% url 'fridge_app:about' %}">About</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="{% url 'fridge_app:index' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="{% url 'fridge_app:food' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           View Items
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="">Add item</a>
-          <a class="dropdown-item" href="">Take item</a>
+          <a class="dropdown-item" href="{% url 'fridge_app:food_add' %}">Add item</a>
+          <a class="dropdown-item" href="{% url 'fridge_app:food' %}">Take item</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Reviews (TBD)</a>
+          <a class="dropdown-item" href="#">Food Reviews (TBD)</a>
         </div>
       </li>
     </ul>
